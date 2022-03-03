@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">你是谁？</button>
+
+    <script>
+        // 1.点击按钮，弹出对话框
+        // 2.事件由三部分组成，事件源，事件类型，事件处理程序
+        // 3.事件类型：单击，双击，移动，右键单击。。。
+        // 4.事件处理程序：就是通过一个函数来完成单击或双击事件的目的
+        var button = document.getElementById('btn');
+        button.onclick=function(){
+            alert('你好，我是张浩！');
+        }
+        
+    </script>
+</body>
+</html>

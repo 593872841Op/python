@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="time">2022-1-15</div>
+
+    <script>
+        // 1.读取是从上到下，所以要先有标签后有脚本
+        // 2.get 获得 element元素，使用驼峰命名法
+        // 3.参数id是大小写敏感
+        // 4.返回的是一个对象
+        var time=document.getElementById("time");
+        console.log(time);
+        console.log(typeof(time));
+        // 5.打印返回元素对象，查看里面的属性和方法
+        console.dir(time);
+    </script>
+</body>
+</html>

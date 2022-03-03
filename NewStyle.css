@@ -1,0 +1,40 @@
+body {
+    font: 16px/28px '微软雅黑';
+}
+
+h1 {
+    /* 文字不加粗 */
+    font-weight: normal;
+    /* 居中对齐 */
+    text-align: center;
+}
+
+a {
+    /* 去掉下划线 */
+    text-decoration: none;
+}
+
+.grey {
+    color: rgb(136,136,136);
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.btn {
+    font-weight: bolder;
+}
+
+.pic {
+    text-align: center;
+}
+
+p {
+    /* 首行缩进 */
+    text-indent: 2em;
+}
+
+.foot {
+    color: rgb(136,136,136);
+    font-size: 12px;
+}

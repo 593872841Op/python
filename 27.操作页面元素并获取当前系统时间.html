@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>获取当前系统时间</button>
+    <div>显示当前系统时间</div>
+
+    <script>
+        // 点击按钮，显示当前的系统时间
+        // 1.获取元素
+        var btn = document.querySelector('button');
+        var div = document.querySelector('div');
+        // 2.注册事件
+        btn.onclick=function(){
+            div.innerHTML=getDate();
+        }
+
+        // 3.事件处理程序
+        function getDate(){
+            var date=new Date();
+            // 从 Date对象获取四位数字的年份
+            var year=date.getFullYear();
+            // 从 Date对象获取月份（0-11）
+            var month=date.getMonth()+1;
+            // 从 Date对象获取一个月中的某一天（1-31）
+            var dates=date.getDate();
+            // 从 Date对象获取一周中的某一天
+            var day=date.getDay();
+            var arr=['星期日','星期一','星期二','星期三','星期四','星期五','星期六']
+
+            return '今天是：'+year+'年'+month+'月'+dates+'日'+arr[day];
+        }
+
+    </script>
+</body>
+</html>
